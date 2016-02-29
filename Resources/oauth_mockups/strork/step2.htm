@@ -1,0 +1,75 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><META content="IE=5.0000" http-equiv="X-UA-Compatible">
+	 
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	 <TITLE>STORK:: (Secure Identity Across Borders Linked)</TITLE>	 <LINK href="assets/estilos.css" 
+rel="stylesheet" type="text/css">		 
+<SCRIPT src="js/dsapplet.js" type="text/javascript"></SCRIPT>
+	 
+<META name="GENERATOR" content="MSHTML 11.00.10586.103"></HEAD> 
+<BODY>
+<DIV id="contenedor">
+<DIV id="cabecera">
+<DIV class="logo"></DIV>
+<DIV class="logo_ue"></DIV>
+<DIV class="tituloCabecera">STORK:: (Secure Identity Across Borders 
+Linked)</DIV></DIV>
+<DIV id="borde">
+<DIV id="principal">
+<DIV id="margen">
+<FORM name="authenticationv2" id="authenticationv2" action="Login" 
+method="post">
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD colspan="2">
+      <H4>				Authentication			 </H4></TD></TR>
+  <TR>
+    <TD>User Name : </TD>
+    <TD><INPUT name="username" type="text" length="20"></TD></TR>
+  <TR>
+    <TD>Password: </TD>
+    <TD><INPUT name="password" type="password" size="20"></TD></TR></TBODY></TABLE><BR><BR><INPUT name="samlToken" type="hidden" value="null">
+	 <INPUT type="submit" value="Send">   <BR><BR><INPUT name="signature" id="signature" type="hidden">
+	 </FORM>
+<FORM name="authentication" id="authentication" action="Login" 
+method="post"><INPUT name="samlToken" type="hidden" value="null"> <INPUT name="signature" id="signature" type="hidden"> 
+<INPUT name="username" type="hidden"> <INPUT name="password" type="hidden"> 
+</FORM><INPUT onclick="sign()" type="button" value="Digital Signature">
+			 </DIV></DIV></DIV></DIV>
+<DIV id="dsigembed"></DIV>
+<SCRIPT type="text/javascript">
+ var dsapplet = new DSApplet('dsig-applet-complete.jar');
+ dsapplet.setNoCertificatesJSFunction('onNoCertificates');
+ dsapplet.setFormId('authentication');
+ dsapplet.setSignatureElement('signature');
+ dsapplet.setSuccessJSFunction('success');
+ dsapplet.setErrorJSFunction('error');
+ 
+ dsapplet.setKeyUsageRestrictions('NonRepudiation');
+</SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+ function sign() {
+  dsapplet.fillAppletDeclaration(1, 1,'dsigembed');
+  var result = dsapplet.signForm('authentication');
+ 
+  if (result) {
+  
+  document.authentication.submit();
+  }
+ }
+		
+ function onNoCertificates() {
+  alert("Not found Digital Signature in this computer.");
+ }
+
+ function success() {
+ //action on success
+ }
+
+ function error() {
+  alert("Fail in signing process.");
+ }
+</SCRIPT>
+ </BODY></HTML>

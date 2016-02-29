@@ -1,0 +1,135 @@
+html {
+	font: 82%/normal Verdana, Geneva, Arial, Helvetica, sans-serif; margin: 0px; width: 100%; height: 100%; text-align: center; font-size-adjust: none; font-stretch: normal;
+}
+body {
+	font: 82%/normal Verdana, Geneva, Arial, Helvetica, sans-serif; margin: 0px; width: 100%; height: 100%; text-align: center; font-size-adjust: none; font-stretch: normal;
+}
+body {
+	background: url("fondo.gif") repeat-x rgb(255, 255, 255); text-align: center;
+}
+#cabecera {
+	background: url("cabecera.gif") no-repeat; width: 820px; height: 125px;
+}
+.logo_min {
+	background: url("logo_min.gif") no-repeat left; width: 90px; height: 35px; margin-top: 30px; margin-left: 15px; float: left;
+}
+.logo_ue {
+	width: 90px; height: 76px; right: -170px; margin-top: 30px; float: right; position: relative;
+}
+.logo {
+	top: 18px; width: 180px; height: 100px; right: 100px; float: right; position: relative;
+}
+.tituloCabecera {
+	width: 536px; text-align: center; color: rgb(189, 0, 34); font-size: 1.9em; font-weight: normal; margin-top: 70px; float: left;
+}
+#contenedor {
+	margin: auto; width: 820px; text-align: left; padding-top: 0px;
+}
+#borde {
+	height: 330px;
+}
+#margen {
+	padding: 0px 10px 10px 20px; border: 1px dotted rgb(102, 102, 102); border-image: none; width: 790px; text-align: left;
+}
+#principal_home {
+	padding: 20px; width: 100%; height: 94.8%; text-align: center; float: left; z-index: 2;
+}
+#principal {
+	width: 80%; height: 94.8%; text-align: center; float: left; z-index: 2;
+}
+#barra_menu {
+	background: rgb(189, 0, 34); padding: 8px 2px 2px 15px; height: 20px; text-align: left; color: rgb(255, 255, 255); font-weight: bold;
+}
+#barra {
+	background: rgb(189, 0, 34); padding: 8px 2px 2px 220px; height: 20px; text-align: left; color: rgb(255, 255, 255); font-weight: bold;
+}
+img {
+	border: 0px currentColor; border-image: none;
+}
+#menu {
+	background: rgb(255, 255, 255); width: 200px; height: 100%; border-right-color: rgb(153, 153, 153); border-right-width: 1px; border-right-style: dotted; float: left; z-index: 3;
+}
+#menu ul {
+	list-style: none; margin: 0px; padding: 0px;
+}
+#menu li {
+	background: rgb(255, 255, 255); height: 33px; color: rgb(189, 0, 34); text-decoration: none; border-bottom-color: rgb(189, 0, 34); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+#menu a {
+	background: url("point.gif") no-repeat 5% 52%; padding: 10px 10px 10px 25px; outline: 0px; color: rgb(189, 0, 34); font-weight: bold; text-decoration: none; border-right-color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: solid; display: block;
+}
+#menu a:hover {
+	background: url("point.gif") no-repeat 5% 52% rgb(204, 202, 202); color: rgb(255, 255, 255);
+}
+.activado {
+	background: rgb(221, 221, 221); color: rgb(255, 255, 255);
+}
+.desactivado {
+	background: rgb(255, 255, 255); color: rgb(189, 0, 34);
+}
+h1 {
+	
+}
+h2 {
+	color: rgb(189, 0, 34); font-size: 1.1em; font-weight: bold;
+}
+a:link {
+	color: rgb(189, 0, 34);
+}
+a:visited {
+	color: rgb(189, 0, 34);
+}
+a:hover {
+	color: rgb(113, 113, 113);
+}
+#pie {
+	background: rgb(113, 113, 113); height: 20px; color: rgb(189, 0, 34); border-bottom-color: rgb(189, 0, 34); border-bottom-width: 5px; border-bottom-style: solid;
+}
+#textopie {
+	padding: 2px; text-align: center; color: rgb(255, 255, 255);
+}
+#botones {
+	margin: 0px; padding: 5px 0px; top: 10px; height: 30px; text-align: right; position: relative;
+}
+#boton_center {
+	text-align: center;
+}
+input[type='button'] {
+	background: url("boton_off.gif") repeat-x; padding: 5px; outline: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: auto; color: rgb(255, 255, 255); font-family: verdana; font-size: 1em; font-weight: bold; cursor: pointer;
+}
+input[type='submit'] {
+	background: url("boton_off.gif") repeat-x; padding: 5px; outline: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: auto; color: rgb(255, 255, 255); font-family: verdana; font-size: 1em; font-weight: bold; cursor: pointer;
+}
+input[type='button']:hover {
+	background: url("boton_on.gif") repeat-x; border: 1px solid rgb(0, 0, 0); border-image: none;
+}
+input[type='submit']:hover {
+	background: url("boton_on.gif") repeat-x; border: 1px solid rgb(0, 0, 0); border-image: none;
+}
+#space {
+	height: 25px; display: block;
+}
+#space5 {
+	height: 5px;
+}
+#space10 {
+	padding: 10px 5px 0px 0px;
+}
+#space50 {
+	background: yellow; height: 50px; display: block;
+}
+.borde {
+	border: 1px solid rgb(189, 0, 34); border-image: none; width: 100%;
+}
+#titFila {
+	background: url("check.gif") no-repeat 1% 50% rgb(232, 232, 232); margin: 0px; text-align: right; color: rgb(0, 0, 0); font-weight: bold;
+}
+#titResul {
+	background: rgb(249, 249, 249); padding: 10px; text-align: left; color: rgb(0, 0, 0);
+}
+p {
+	padding: 10px 0px;
+}
+#nota {
+	color: rgb(189, 0, 34); font-weight: bold;
+}

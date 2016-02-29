@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ΓΓΔΕ</title>
+    <!-- jQuery -->
+    <script type="text/javascript" src="../../../lib/jquery/dist/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../../../Scripts/QueryString.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            var gcm_username = GetQueryStringParams('j_username');
+            var gcm_password = GetQueryStringParams('j_password');
+            var fid = GetQueryStringParams('fid');
+
+            $('#hidden_fid').val(fid);
+
+            if (!(gcm_username=='citizen' && gcm_password=='citizen' ))
+            {
+                $('#content_loginok').hide();
+                $('#content_loginerror').show();
+            }
+            else
+            {
+                $('#content_loginok').show();
+                $('#content_loginerror').hide();
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+
+        <table width="798" align="center" border="1" class="kadtable"
+               bgcolor="#f3f3f3">
+
+            <tr>
+                <td>
+                   
+                    <table width="100%" cellspacing="0" border="0" cellpadding="0">
+
+                        <tr>
+                            <td>
+
+                                <table align="center" bgcolor="#f3f3f3" border="0" cellpadding="0"
+                                       cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td bgcolor="#c0e3ef" width="35">
+                                                <div align="center">
+                                                    <img src="assets/LOGO_transparent2.png" class="tableborder"
+                                                         border="0" vspace="1" width="271" height="48" hspace="1" />
+                                                </div>
+                                            </td>
+                                            <td class="textdimokratia" bgcolor="#c0e3ef" valign="bottom"></td>
+                                            <td class="tableLeftnRightHorizRulerWhite" bgcolor="#c0e3ef"
+                                                valign="top" width="150">
+                                                <div class="textdimokratia" align="center"></div>
+                                            </td>
+                                            <td class="textmenu" bgcolor="#c0e3ef" width="206">
+                                                <div class="textdimokratia" align="right">
+                                                    <strong>
+                                                        ΕΛΛΗΝΙΚΗ
+                                                        ΔΗΜΟΚΡΑΤΙΑ
+                                                    </strong><br />
+
+                                                    <strong>Υπουργείο Οικονομικών </strong>
+                                                </div>
+                                            </td>
+                                            <td class="textdimokratia" bgcolor="#c0e3ef" width="38">
+                                                <div align="center">
+                                                    <img src="assets/ethnos1mikro.gif"
+                                                         class="tableborder" vspace="1" width="25" height="24" hspace="1" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="#c0e3ef" colspan="5" height="5px"></td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+
+                                <table width="100%" border="0" #bgcolor="#f3f3f3" cellpadding="0"
+                                       cellspacing="0">
+                                    <tr>
+                                        <td colspan="3">
+
+                                            <table width="100%" border="0" cellpadding="0" cellspacing="0"
+                                                   bgcolor="#f3f3f3">
+
+
+
+
+                                                <tr align="left">
+                                                    <td colspan="3" background="../images/gsis_e-ser1.gif"
+                                                        height="28">
+
+                                                        <div class="textwhitesmal" align="right">
+                                                            <span class="titlosefarmogon"><font size="2">  ΥΠΗΡΕΣΙΕΣ WEB &nbsp;&nbsp;</font></span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                </table>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td width="74%">
+                    <table width="800" border="0" class="kadtable">
+                        <tbody>
+                            <tr>
+                                <table width="800" border="0">
+                                    <tbody>
+
+                                        <tr>
+                                            <td colspan="6" valign="top" align="center">
+                                                <strong>
+
+                                                </strong><br />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <table width="100%" border="0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="6" align="center" class="textbluelec"
+                                                                style="font-size: 9.5pt" width="100%">
+                                                                <b>
+                                                                    ΓΓΔΕ -
+                                                                    ΚΑΛΩΣ ΗΛΘΑΤΕ ΣΤΙΣ ΥΠΗΡΕΣΙΕΣ WEB
+                                                                </b>
+                                                            </td>
+
+                                                        </tr>
+
+
+
+                                                        <tr>
+                                                            <td>
+                                                                <div id="content_loginok" style="display:none">
+                                                                    <div align="center" class="textbluelec" style="font-size: 11pt"
+                                                                         width="100%">Παρακαλούμε επιβεβαιώστε:</div>
+                                                                    <p></p>
+                                                                    <div class="textbluelec" style="font-size: 9.5pt"
+                                                                         width="100%">Εξουσιοδοτώ τον εξυπηρετητή του συστήματος "FORMS.GOV" να προσπελάσει  στοιχεία μου (ΑΦΜ, Στοιχεία Ταυτότητας) που τηρούνται στη ΓΓΔΕ
+                                                                    </div>
+
+                                                                    <form id="authorizationForm"  action="../../forms/Form.aspx" method="get">
+                                                                        <input name="requestToken" value="citizen" type="hidden" /> 
+                                                                        <input type="hidden" name="fid" ID="hidden_fid" /> 
+                                                                         <label>
+                                                                            <input name="authorize"  value="Εξουσιοδότηση" type="submit" />
+                                                                        </label>
+                                                                    </form>
+                                                                </div>
+
+                                                                <div id="content_loginerror" style="display:none">
+                                                                    <div align="center" class="textbluelec" style="font-size: 11pt"
+                                                                         width="100%">Λάθος στοιχεία</div>
+                                                                    <p></p>
+                                                                    <div style="font-size: 9.5pt;color:red;"  width="100%">
+                                                                        Τα στοιχεία που δώσατε δεν είναι σωστά. Για τις ανάγκες του demo χρησιμοποιήστε ως στοιχεία εισόδου τα <b>citizen</b>/<b>citizen</b>
+                                                                    </div>
+
+
+                                                                </div> <!-- Login error-->
+
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div align="center">
+                                                    <br />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+   
+</body>
+</html>

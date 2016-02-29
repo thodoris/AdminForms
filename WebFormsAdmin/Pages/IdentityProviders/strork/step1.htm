@@ -1,0 +1,114 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><META content="IE=5.0000" http-equiv="X-UA-Compatible">
+<META charset="utf-8">		 <TITLE>Ελληνικός Κόμβος Διαλειτουργικότητας για 
+αυθεντικοποίηση χρηστών (PEPS)</TITLE>		 <LINK href="resources/css/bootstrap.min.css" 
+rel="stylesheet" type="text/css">		 <LINK href="assets/estilos_gr.css" 
+rel="stylesheet" type="text/css">		 
+		 
+          <script type="text/javascript" src="../../../lib/jquery/dist/jquery-1.11.3.min.js"></script>
+          <script type="text/javascript" src="../../../Scripts/QueryString.js"></script>
+          <script type="text/javascript">
+
+                jQuery(document).ready(function () {
+                    var fid = GetQueryStringParams('fid');
+                    $('#hidden_fid').val(fid);
+
+                });
+
+          </script>
+
+ </HEAD>
+<BODY>
+<DIV id="contenedor">
+<DIV id="cabecera">
+<DIV class="logo_ydmht"></DIV>
+<DIV class="logo_mas"></DIV></DIV><!-- <div id="borde"> -->				 <!-- <div id="principal"> -->
+
+<DIV id="space"></DIV>
+<DIV id="margen">
+<H3>Συγκατάθεση για λήψη των στοιχείων</H3><BR>
+<P>															Ο Πάροχος Υπηρεσιών με Επίπεδο Διασφάλισης Ποιότητας (ΕΔΠ) 3
+αιτείται τα ακόλουθα στοιχεία :													 </P><BR><!-- Nav tabs -->
+<UL class="nav nav-tabs">
+  <LI class="active"><A href="step1.htm#attributes"
+  data-toggle="tab">Στοιχεία</A></LI></UL>
+<FORM name="consentSelector" id="CitizenConsent" action="./step2.htm" method="get"> 
+    <input type="hidden" name="fid" ID="hidden_fid" /> 
+<DIV class="tab-content">
+<DIV class="tab-pane active" id="simple"><BR>
+<H4>Υποχρεωτικά στοιχεία</H4><BR>
+<DIV class="row">
+<DIV class="col-md-5"><INPUT name="eIdentifier" disabled="disabled" id="CitizenConsent_eIdentifier"
+type="checkbox" checked="true"
+value="true"><INPUT name="__checkbox_eIdentifier" disabled="disabled" id="__checkbox_CitizenConsent_eIdentifier" type="hidden" value="true">
+&nbsp;														 <SPAN class="attributeValue">Ηλεκτρονικό αναγνωριστικό
+ταυτοποίησης (e-Identifier)</SPAN>													 </DIV></DIV><INPUT name="eIdentifier" id="CitizenConsent_eIdentifier" type="hidden" value="name}">
+
+<DIV class="row">
+<DIV class="col-md-5"><INPUT name="givenName" disabled="disabled" id="CitizenConsent_givenName"
+type="checkbox" checked="true"
+value="true"><INPUT name="__checkbox_givenName" disabled="disabled" id="__checkbox_CitizenConsent_givenName" type="hidden" value="true">
+&nbsp;														 <SPAN class="attributeValue">Όνομα</SPAN>
+													 </DIV></DIV><INPUT name="givenName" id="CitizenConsent_givenName" type="hidden" value="name}">
+
+<DIV class="row">
+<DIV class="col-md-5"><INPUT name="dateOfBirth" disabled="disabled" id="CitizenConsent_dateOfBirth"
+type="checkbox" checked="true"
+value="true"><INPUT name="__checkbox_dateOfBirth" disabled="disabled" id="__checkbox_CitizenConsent_dateOfBirth" type="hidden" value="true">
+&nbsp;														 <SPAN class="attributeValue">Ημερομηνία γέννησης</SPAN>
+													 </DIV></DIV><INPUT name="dateOfBirth" id="CitizenConsent_dateOfBirth" type="hidden" value="name}">
+
+<DIV class="row">
+<DIV class="col-md-5"><INPUT name="citizenQAALevel" disabled="disabled" id="CitizenConsent_citizenQAALevel"
+type="checkbox" checked="true" value="true"><INPUT name="__checkbox_citizenQAALevel" disabled="disabled" id="__checkbox_CitizenConsent_citizenQAALevel" type="hidden" value="true">
+&nbsp;														 <SPAN class="attributeValue">Επίπεδο Διασφάλισης Ποιότητας
+(ΕΔΠ) πολίτη</SPAN>													 </DIV></DIV><INPUT name="citizenQAALevel" id="CitizenConsent_citizenQAALevel" type="hidden" value="name}">
+
+<DIV class="row">
+<DIV class="col-md-5"><INPUT name="surname" disabled="disabled" id="CitizenConsent_surname"
+type="checkbox" checked="true"
+value="true"><INPUT name="__checkbox_surname" disabled="disabled" id="__checkbox_CitizenConsent_surname" type="hidden" value="true">
+&nbsp;														 <SPAN class="attributeValue">Επώνυμο</SPAN>
+													 </DIV></DIV><INPUT name="surname" id="CitizenConsent_surname" type="hidden" value="name}">
+																																						 <BR><BR>
+<H4>Προαιρετικά στοιχεία</H4>
+<DIV class="row">
+<DIV class="col-md-5"><INPUT name="certificateNumber" id="CitizenConsent_certificateNumber"
+type="checkbox" value="true"><INPUT name="__checkbox_certificateNumber" id="__checkbox_CitizenConsent_certificateNumber" type="hidden" value="true">
+&nbsp; <SPAN class="attributeValue">Αριθμός Εγγράφου
+Ταυτοποίησης</SPAN></DIV></DIV>
+<DIV class="row">
+<DIV class="col-md-5"><INPUT name="gender" id="CitizenConsent_gender" type="checkbox"
+value="true"><INPUT name="__checkbox_gender" id="__checkbox_CitizenConsent_gender" type="hidden" value="true">
+&nbsp; <SPAN class="attributeValue">Φύλο</SPAN></DIV></DIV>
+<DIV class="row">
+<DIV class="col-md-5"><INPUT name="eMail" id="CitizenConsent_eMail" type="checkbox"
+value="true"><INPUT name="__checkbox_eMail" id="__checkbox_CitizenConsent_eMail" type="hidden" value="true">
+&nbsp; <SPAN class="attributeValue">ηλεκτρονικό ταχυδρομείο
+(e-mail)</SPAN></DIV></DIV>
+<DIV class="row">
+<DIV class="col-md-5"><INPUT name="insuranceNumber" id="CitizenConsent_insuranceNumber"
+type="checkbox" value="true"><INPUT name="__checkbox_insuranceNumber" id="__checkbox_CitizenConsent_insuranceNumber" type="hidden" value="true">
+&nbsp; <SPAN class="attributeValue">Αριθμός Μητρώου Κοινωνικής Ασφάλισης
+(ΑΜΚΑ)</SPAN></DIV></DIV>
+<DIV class="row">
+<DIV class="col-md-5"><INPUT name="fiscalNumber" id="CitizenConsent_fiscalNumber"
+type="checkbox" value="true"><INPUT name="__checkbox_fiscalNumber" id="__checkbox_CitizenConsent_fiscalNumber" type="hidden" value="true">
+&nbsp; <SPAN class="attributeValue">Αριθμός Φορολογικού Μητρώου
+(ΑΦΜ)</SPAN></DIV></DIV><BR><BR></DIV></DIV>
+<DIV class="row">
+<DIV class="col-md-1"><INPUT id="CitizenConsent_0" type="submit" value="send">
+</DIV>
+<FORM name="cancelForm" id="cancelForm" action="step2.htm"
+method="post"><INPUT name="SAMLResponse" id="SAMLResponse" type="hidden" value="5zZT4=">
+
+<DIV class="col-md-1"><INPUT id="cancelForm_0" type="submit" value="cancel">
+</DIV></FORM></DIV></FORM></DIV><!-- </div> -->			 <!-- </div> -->
+<DIV id="space"></DIV>
+<DIV id="footer">
+<DIV class="logo_eu_funded"></DIV>
+<DIV class="textFooter"><SPAN id="textFooterMiddle"><BR><BR>Η διαχείριση του
+κόμβου αυθεντικοποίησης γίνεται από τη Διεύθυνση Ηλεκτρονικής Επεξεργασίας
+Στοιχείων του Υ.Δ.Μ.Η.Δ. στα πλαίσια του συγχρηματοδοτούμενου έργου της Ε.Ε.
+STORK2.0 και φιλοξενείται από το κέντρο δεδομένων της ΚτΠ ΑΕ.					 </SPAN>
+				 </DIV></DIV></DIV></BODY></HTML>
